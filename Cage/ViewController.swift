@@ -7,8 +7,6 @@
 //
 
 import Cocoa
-//import ObjectMapper
-//import Alamofire
 
 class SidebarMenuButton: NSButton {
     
@@ -94,12 +92,6 @@ extension ViewController {
 }
 
 extension ViewController: NSTextFieldDelegate {
-    
-    func control(control: NSControl, textShouldBeginEditing fieldEditor: NSText) -> Bool {
-        debugPrint(fieldEditor)
-        
-        return true
-    }
     
     func control(control: NSControl, textView: NSTextView, doCommandBySelector commandSelector: Selector) -> Bool {
         

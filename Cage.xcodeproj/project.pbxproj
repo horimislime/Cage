@@ -19,7 +19,7 @@
 		138BCBD01BF1EBF900AF902E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138BCBC41BF1EBF900AF902E /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		138BCBD11BF1EBF900AF902E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BCBC51BF1EBF900AF902E /* Configuration.swift */; settings = {ASSET_TAGS = (); }; };
 		138BCBD21BF1EBF900AF902E /* Esa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BCBC61BF1EBF900AF902E /* Esa.swift */; settings = {ASSET_TAGS = (); }; };
-		138BCBD31BF1EBF900AF902E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BCBC71BF1EBF900AF902E /* File.swift */; settings = {ASSET_TAGS = (); }; };
+		138BCBD31BF1EBF900AF902E /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BCBC71BF1EBF900AF902E /* Entry.swift */; settings = {ASSET_TAGS = (); }; };
 		138BCBD41BF1EBF900AF902E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BCBC81BF1EBF900AF902E /* Global.swift */; settings = {ASSET_TAGS = (); }; };
 		138BCBD61BF1EBF900AF902E /* NSColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BCBCA1BF1EBF900AF902E /* NSColorExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		138BCBD71BF1EBF900AF902E /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 138BCBCB1BF1EBF900AF902E /* octicons.ttf */; settings = {ASSET_TAGS = (); }; };
@@ -74,7 +74,7 @@
 		138BCBC41BF1EBF900AF902E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Cage/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		138BCBC51BF1EBF900AF902E /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Cage/Configuration.swift; sourceTree = SOURCE_ROOT; };
 		138BCBC61BF1EBF900AF902E /* Esa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Esa.swift; path = Cage/Esa.swift; sourceTree = SOURCE_ROOT; };
-		138BCBC71BF1EBF900AF902E /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Cage/File.swift; sourceTree = SOURCE_ROOT; };
+		138BCBC71BF1EBF900AF902E /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Cage/Entry.swift; sourceTree = SOURCE_ROOT; };
 		138BCBC81BF1EBF900AF902E /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Cage/Global.swift; sourceTree = SOURCE_ROOT; };
 		138BCBCA1BF1EBF900AF902E /* NSColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSColorExtension.swift; path = Cage/NSColorExtension.swift; sourceTree = SOURCE_ROOT; };
 		138BCBCB1BF1EBF900AF902E /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = octicons.ttf; path = Cage/octicons.ttf; sourceTree = SOURCE_ROOT; };
@@ -153,7 +153,7 @@
 				138BCBC51BF1EBF900AF902E /* Configuration.swift */,
 				138BCBE71BF1EDB300AF902E /* Info.plist */,
 				138BCBC61BF1EBF900AF902E /* Esa.swift */,
-				138BCBC71BF1EBF900AF902E /* File.swift */,
+				138BCBC71BF1EBF900AF902E /* Entry.swift */,
 				138BCBC81BF1EBF900AF902E /* Global.swift */,
 				138BCBCA1BF1EBF900AF902E /* NSColorExtension.swift */,
 				138BCBCB1BF1EBF900AF902E /* octicons.ttf */,
@@ -320,7 +320,7 @@
 			files = (
 				138BCBDD1BF1EC0D00AF902E /* CageTests.swift in Sources */,
 				138BCBD21BF1EBF900AF902E /* Esa.swift in Sources */,
-				138BCBD31BF1EBF900AF902E /* File.swift in Sources */,
+				138BCBD31BF1EBF900AF902E /* Entry.swift in Sources */,
 				138BCBD61BF1EBF900AF902E /* NSColorExtension.swift in Sources */,
 				138BCBDA1BF1EBF900AF902E /* ViewController.swift in Sources */,
 				138BCBD11BF1EBF900AF902E /* Configuration.swift in Sources */,
