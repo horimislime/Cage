@@ -105,8 +105,10 @@ extension ViewController: NSTextFieldDelegate {
         
         if commandSelector == "moveDown:" || commandSelector == "insertNewline:" {
             self.view.window?.makeFirstResponder(bodyTextView)
+            return true
         }
         
+        textView.performSelector(commandSelector)
         return true
     }
 }
