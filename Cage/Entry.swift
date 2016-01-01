@@ -50,6 +50,20 @@ class Entry : Mappable {
         url <- map["url"]
     }
     
+    class func listTemplates(completion: Result<[Entry], NSError> -> Void) {
+        Alamofire.request(Router.Templates(Configuration.load()))
+            .validate()
+            .responseArray("posts") { (entries: [Entry]?, error: ErrorType?) -> Void in
+                
+                if let entries = entries {
+                    completion(.Success(entries))
+                    
+                } else {
+                    completion(.Failure(NSError(domain: "jp.horimislime.cage.error", code: -1, userInfo: nil)))
+                }
+        }
+    }
+    
     func save(completion: Result<Entry, NSError> -> Void) {
         
         Alamofire.request(Router.Posts(Configuration.load(), self))

@@ -14,9 +14,12 @@ enum Router: URLRequestConvertible {
     static let baseURLString = "https://api.esa.io/v1"
     
     case Posts(Configuration, Entry)
+    case Templates(Configuration)
     
     var method: Alamofire.Method {
         switch self {
+        case .Templates:
+            return .GET
         case .Posts:
             return .POST
         }
@@ -28,6 +31,8 @@ enum Router: URLRequestConvertible {
             switch self {
             case .Posts(let config, _):
                 return "/teams/\(config.teamName!)/posts"
+            case .Templates(let config):
+                return "/teams/\(config.teamName!)/posts?q=category:templates"
             }
         }()
         
@@ -50,6 +55,13 @@ enum Router: URLRequestConvertible {
             
             let payload = NSString(string: Mapper().toJSONString(param, prettyPrint: false)!)
             request.HTTPBody = payload.dataUsingEncoding(NSUTF8StringEncoding)
+            return request
+            
+        case .Templates(let config):
+            if let token = config.token {
+                request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            }
+            
             return request
         }
     }

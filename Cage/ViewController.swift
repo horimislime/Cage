@@ -63,6 +63,9 @@ class ViewController: NSViewController {
         self.titleTextField.focusRingType = .None
         
         self.titleTextField.delegate = self
+        Entry.listTemplates { result in
+            
+        }
     }
 }
 
